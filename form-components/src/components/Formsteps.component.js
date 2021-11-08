@@ -82,9 +82,8 @@ nextButton(){
   render() {    
     return (
       <React.Fragment>
-      <h1>React Wizard Form 🧙‍♂️</h1>
-      <p>Step {this.state.currentStep} </p> 
-      <p>Step {this.state.email} </p> 
+      <h1>Sign In</h1>
+      <p>  {this.state.email} </p> 
 
       <form onSubmit={this.handleSubmit}>
       {/* 
@@ -148,7 +147,7 @@ function Step2(props) {
   } 
   return(
     <div className="form-group">
-      <label htmlFor="userFirstName">user First Name</label>
+      <label htmlFor="userFirstName">First Name</label>
       <input
         className="form-control"
         id="userFirstName"
@@ -159,7 +158,7 @@ function Step2(props) {
         onChange={props.handleChange}
         />
 
-      <label htmlFor="userFirstName">user Last Name</label>
+      <label htmlFor="userFirstName">Last Name</label>
       <input
         className="form-control"
         id="userLastName"
@@ -179,7 +178,7 @@ function Step3(props) {
   } 
   return(
     <div className="form-group">
-      <label htmlFor="birthdate">birthdate</label>
+      <label htmlFor="birthdate">Birthdate</label>
       <input
         className="form-control"
         id="birthdate"
